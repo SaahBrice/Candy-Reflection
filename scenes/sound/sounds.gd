@@ -197,6 +197,50 @@ func _ready() -> void:
 		print("Neither minor nor major")
 
 func sound_variable_shuffler():
+	note_scale = note_scale_values[randi() % 2]
+	if note_scale == 'major':
+		var x = randi()% 25
+		level3_sounds = [
+			level1_sound_notes[x],level1_sound_notes[x+2],level1_sound_notes[x+4],
+			level1_sound_notes[x+5],level1_sound_notes[x+7],level1_sound_notes[x+9],
+			level1_sound_notes[x+11],level1_sound_notes[x+12],level1_sound_notes[x],
+			level1_sound_notes[x+2],level1_sound_notes[x+4], level1_sound_notes[x+5]
+			]
+		level1_sounds = [
+			level2_sound_notes[x],level2_sound_notes[x+2],level2_sound_notes[x+4],
+			level2_sound_notes[x+5],level2_sound_notes[x+7],level2_sound_notes[x+9],
+			level2_sound_notes[x+11],level2_sound_notes[x+12],level2_sound_notes[x],
+			level2_sound_notes[x+2],level2_sound_notes[x+4], level2_sound_notes[x+5]
+			]
+		level2_sounds = [
+			level3_sound_notes[x],level3_sound_notes[x+2],level3_sound_notes[x+4],
+			level3_sound_notes[x+5],level3_sound_notes[x+7],level3_sound_notes[x+9],
+			level3_sound_notes[x+11],level3_sound_notes[x+12],level3_sound_notes[x],
+			level3_sound_notes[x+2],level3_sound_notes[x+4], level3_sound_notes[x+5]
+			]
+	elif note_scale == 'minor':
+		var x = randi()% 25
+		level3_sounds = [
+			level1_sound_notes[x],level1_sound_notes[x+2],level1_sound_notes[x+3],
+			level1_sound_notes[x+5],level1_sound_notes[x+7],level1_sound_notes[x+8],
+			level1_sound_notes[x+10],level1_sound_notes[x+12],level1_sound_notes[x],
+			level1_sound_notes[x+2],level1_sound_notes[x+3], level1_sound_notes[x+5]
+			]
+		level1_sounds = [
+			level2_sound_notes[x],level2_sound_notes[x+2],level2_sound_notes[x+3],
+			level2_sound_notes[x+5],level2_sound_notes[x+7],level2_sound_notes[x+8],
+			level2_sound_notes[x+10],level2_sound_notes[x+12],level2_sound_notes[x],
+			level2_sound_notes[x+2],level2_sound_notes[x+3], level2_sound_notes[x+5]
+			]
+		level2_sounds = [
+			level3_sound_notes[x],level3_sound_notes[x+2],level3_sound_notes[x+3],
+			level3_sound_notes[x+5],level3_sound_notes[x+7],level3_sound_notes[x+8],
+			level3_sound_notes[x+10],level3_sound_notes[x+12],level3_sound_notes[x],
+			level3_sound_notes[x+2],level3_sound_notes[x+3], level3_sound_notes[x+5]
+			]
+	else:
+		print("Neither minor nor major")
+	print('sound shuffled')
 	pass
 
 func get_sound(level, collected_sound):
