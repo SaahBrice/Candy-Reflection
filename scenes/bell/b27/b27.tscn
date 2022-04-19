@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/bell/b27/b27.gd" type="Script" id=1]
+[ext_resource path="res://assets/mirror.png" type="Texture" id=10]
+[ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=17]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 17 )
+
+[node name="scene1" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="main_matrix_position" type="Position2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="mirror" type="Sprite" parent="."]
+rotation = 1.5708
+texture = ExtResource( 10 )
+flip_v = true
+
+[node name="mirror2" type="Sprite" parent="."]
+rotation = 1.5708
+texture = ExtResource( 10 )
+flip_v = true
+
+[node name="mirror3" type="Sprite" parent="."]
+rotation = 1.5708
+texture = ExtResource( 10 )
+flip_v = true
+
+[node name="enable_disable" type="Tween" parent="."]
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 41.0
+margin_top = 35.0
+margin_right = 263.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Very calm piano.mp3-69d979d13899e6d2ae77ad921b9997ee.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Very calm piano.mp3"
+dest_files=[ "res://.import/Very calm piano.mp3-69d979d13899e6d2ae77ad921b9997ee.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

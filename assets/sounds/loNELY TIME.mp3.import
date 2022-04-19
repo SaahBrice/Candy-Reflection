@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/loNELY TIME.mp3-872f57cc63f72cdf7fc964a0e11616c1.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/loNELY TIME.mp3"
+dest_files=[ "res://.import/loNELY TIME.mp3-872f57cc63f72cdf7fc964a0e11616c1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

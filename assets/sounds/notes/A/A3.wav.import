@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/A3.wav-8698615350090a94e801a26be0615e5e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes/A/A3.wav"
+dest_files=[ "res://.import/A3.wav-8698615350090a94e801a26be0615e5e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

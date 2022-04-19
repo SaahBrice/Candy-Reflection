@@ -1,0 +1,85 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://game_over.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/levels menu/background_game_G.png" type="Texture" id=3]
+[ext_resource path="res://assets/new_worlds/game_over_ok.png" type="Texture" id=4]
+[ext_resource path="res://assets/new_worlds/game_over_cancel.png" type="Texture" id=5]
+[ext_resource path="res://assets/new_worlds/game_over.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="game_over" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+modulate = Color( 1, 0, 0, 0.0470588 )
+margin_left = 3.0
+margin_top = 1559.0
+margin_right = 728.0
+margin_bottom = 3184.0
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 360, 2322 )
+texture = ExtResource( 6 )
+
+[node name="cancel" type="TextureButton" parent="Sprite"]
+margin_left = -171.0
+margin_top = 70.0
+margin_right = -94.0
+margin_bottom = 156.0
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ok" type="TextureButton" parent="Sprite"]
+margin_left = 81.0
+margin_top = 70.0
+margin_right = 158.0
+margin_bottom = 156.0
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Sprite"]
+margin_left = -268.0
+margin_top = -62.0
+margin_right = 268.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.823529, 0.866667, 0.866667, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Don't giveup! You lost a battle, 
+not the war.
+"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Sprite"]
+margin_left = -308.0
+margin_top = 20.0
+margin_right = 306.0
+margin_bottom = 61.0
+custom_colors/font_color = Color( 0.823529, 0.866667, 0.866667, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Watch an ad to continue?"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="pressed" from="Sprite/cancel" to="." method="_on_cancel_pressed"]
+[connection signal="pressed" from="Sprite/ok" to="." method="_on_ok_pressed"]

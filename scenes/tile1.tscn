@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/tile1.png" type="Texture" id=2]
+[ext_resource path="res://scenes/tile1.gd" type="Script" id=3]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0.0176211, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0.529412, 1 )
+colors = PoolColorArray( 0.824118, 0.824219, 0.820999, 1, 0.300781, 0.300781, 0.300781, 0 )
+
+[node name="tile" type="Node2D"]
+scale = Vector2( 1.2, 1.2 )
+script = ExtResource( 3 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -26.0
+margin_top = -26.0
+margin_right = 26.0
+margin_bottom = 26.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="win" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 60
+lifetime = 0.7
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource( 2 )
+direction = Vector2( 5, 5 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 150.0
+scale_amount = 0.7
+scale_amount_curve = SubResource( 1 )
+color = Color( 0.945098, 1, 0, 1 )
+
+[node name="cancel" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 60
+lifetime = 0.7
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource( 2 )
+direction = Vector2( 5, 5 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 150.0
+scale_amount = 0.7
+scale_amount_curve = SubResource( 1 )
+color_ramp = SubResource( 2 )
+
+[connection signal="tree_entered" from="." to="." method="_on_tile_tree_entered"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

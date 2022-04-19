@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/background_game_G.png" type="Texture" id=2]
+[ext_resource path="res://assets/Main Menu/nm flat character guy.png" type="Texture" id=3]
+[ext_resource path="res://scripts/Message_scene.gd" type="Script" id=4]
+
+[sub_resource type="Theme" id=1]
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = null
+Label/styles/normal = null
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="BackgroundGameG" type="Sprite" parent="."]
+modulate = Color( 0.0745098, 0.117647, 0.180392, 1 )
+position = Vector2( 355, 776 )
+scale = Vector2( 1.08345, 1 )
+texture = ExtResource( 2 )
+
+[node name="Dad" type="Sprite" parent="."]
+position = Vector2( 359, 465 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+
+[node name="text_message" type="Label" parent="."]
+margin_left = 45.0
+margin_top = 648.0
+margin_right = 674.0
+margin_bottom = 875.0
+theme = SubResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.866667, 0.905882, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "It takes one step to be bold
+ONE STEP!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackgroundGameG2" type="Sprite" parent="."]
+modulate = Color( 0.0509804, 0.0666667, 0.0980392, 0 )
+position = Vector2( 355, 802 )
+scale = Vector2( 1.0469, 1 )
+texture = ExtResource( 2 )
+
+[connection signal="tree_exiting" from="." to="." method="_on_Node2D_tree_exiting"]

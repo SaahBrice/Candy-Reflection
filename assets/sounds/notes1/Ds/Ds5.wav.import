@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ds5.wav-c1f1adc82a7f622df1de5aaa2e8e4184.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes1/Ds/Ds5.wav"
+dest_files=[ "res://.import/Ds5.wav-c1f1adc82a7f622df1de5aaa2e8e4184.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

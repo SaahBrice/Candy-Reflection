@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/B3.wav-48893534fed0dabb0d8da2c57dabf00c.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes1/B/B3.wav"
+dest_files=[ "res://.import/B3.wav-48893534fed0dabb0d8da2c57dabf00c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

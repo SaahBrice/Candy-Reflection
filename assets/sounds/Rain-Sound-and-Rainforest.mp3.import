@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Rain-Sound-and-Rainforest.mp3-d165871b832b14c23f6111aaf91f1cca.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Rain-Sound-and-Rainforest.mp3"
+dest_files=[ "res://.import/Rain-Sound-and-Rainforest.mp3-d165871b832b14c23f6111aaf91f1cca.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

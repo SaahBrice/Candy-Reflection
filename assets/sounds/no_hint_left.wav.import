@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/no_hint_left.wav-c108f48fe0bc7a588f6362a825b08e86.sample"
+
+[deps]
+
+source_file="res://assets/sounds/no_hint_left.wav"
+dest_files=[ "res://.import/no_hint_left.wav-c108f48fe0bc7a588f6362a825b08e86.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

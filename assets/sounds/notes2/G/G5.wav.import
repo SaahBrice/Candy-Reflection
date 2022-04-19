@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/G5.wav-1b89f5cbc516459e532d209d951e6d19.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes2/G/G5.wav"
+dest_files=[ "res://.import/G5.wav-1b89f5cbc516459e532d209d951e6d19.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

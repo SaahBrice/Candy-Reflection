@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/E4.wav-534fcb8fa0a87d0102eab5da25d29751.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes1/E/E4.wav"
+dest_files=[ "res://.import/E4.wav-534fcb8fa0a87d0102eab5da25d29751.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

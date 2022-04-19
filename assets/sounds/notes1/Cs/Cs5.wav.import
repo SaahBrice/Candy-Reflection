@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Cs5.wav-8fe8a04bbf9d147f8b049bf8aa6b806f.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes1/Cs/Cs5.wav"
+dest_files=[ "res://.import/Cs5.wav-8fe8a04bbf9d147f8b049bf8aa6b806f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

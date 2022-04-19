@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/C6.wav-7ac8518a9355a10465e6828e57052907.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes/C/C6.wav"
+dest_files=[ "res://.import/C6.wav-7ac8518a9355a10465e6828e57052907.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

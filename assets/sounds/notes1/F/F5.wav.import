@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/F5.wav-67a8c0d45649e90359ce9d9577d6421f.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes1/F/F5.wav"
+dest_files=[ "res://.import/F5.wav-67a8c0d45649e90359ce9d9577d6421f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

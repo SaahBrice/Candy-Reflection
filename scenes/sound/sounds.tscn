@@ -1,0 +1,817 @@
+[gd_scene load_steps=146 format=2]
+
+[ext_resource path="res://assets/sounds/move_down.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/click.wav" type="AudioStream" id=2]
+[ext_resource path="res://scenes/sound/sounds.gd" type="Script" id=3]
+[ext_resource path="res://assets/sounds/no_touches_left.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sounds/no_hint_left.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sounds/button_pressed.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/sounds/move_up.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/sounds/nature.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/loNELY TIME.mp3" type="AudioStream" id=9]
+[ext_resource path="res://assets/sounds/Very calm piano.mp3" type="AudioStream" id=10]
+[ext_resource path="res://assets/sounds/Rain-Sound-and-Rainforest.mp3" type="AudioStream" id=11]
+[ext_resource path="res://assets/sounds/notes1/Cs/Cs3.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/sounds/notes1/Cs/Cs5.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/sounds/notes1/D/D4.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/sounds/notes1/C/C5.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/sounds/notes1/C/C6.wav" type="AudioStream" id=16]
+[ext_resource path="res://assets/sounds/notes1/D/D5.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sounds/notes1/Ds/Ds4.wav" type="AudioStream" id=18]
+[ext_resource path="res://assets/sounds/notes1/E/E5.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/sounds/notes1/F/F3.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/sounds/notes1/F/F4.wav" type="AudioStream" id=21]
+[ext_resource path="res://assets/sounds/notes1/F/F5.wav" type="AudioStream" id=22]
+[ext_resource path="res://assets/sounds/notes1/Fs/Fs3.wav" type="AudioStream" id=23]
+[ext_resource path="res://assets/sounds/bell/8.wav" type="AudioStream" id=24]
+[ext_resource path="res://assets/sounds/bell/9.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/sounds/bell/4.wav" type="AudioStream" id=26]
+[ext_resource path="res://assets/sounds/bell/10.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/bell/11.wav" type="AudioStream" id=28]
+[ext_resource path="res://assets/sounds/bell/12.wav" type="AudioStream" id=29]
+[ext_resource path="res://assets/sounds/bell/1.wav" type="AudioStream" id=30]
+[ext_resource path="res://assets/sounds/bell/2.wav" type="AudioStream" id=31]
+[ext_resource path="res://assets/sounds/bell/3.wav" type="AudioStream" id=32]
+[ext_resource path="res://assets/sounds/bell/7.wav" type="AudioStream" id=33]
+[ext_resource path="res://assets/sounds/bell/5.wav" type="AudioStream" id=34]
+[ext_resource path="res://assets/sounds/bell/6.wav" type="AudioStream" id=35]
+[ext_resource path="res://assets/sounds/sad/11.wav" type="AudioStream" id=36]
+[ext_resource path="res://assets/sounds/sad/12.wav" type="AudioStream" id=37]
+[ext_resource path="res://assets/sounds/sad/8.wav" type="AudioStream" id=38]
+[ext_resource path="res://assets/sounds/sad/4.wav" type="AudioStream" id=39]
+[ext_resource path="res://assets/sounds/sad/6.wav" type="AudioStream" id=40]
+[ext_resource path="res://assets/sounds/sad/7.wav" type="AudioStream" id=41]
+[ext_resource path="res://assets/sounds/sad/2.wav" type="AudioStream" id=42]
+[ext_resource path="res://assets/sounds/sad/1.wav" type="AudioStream" id=43]
+[ext_resource path="res://assets/sounds/sad/3.wav" type="AudioStream" id=44]
+[ext_resource path="res://assets/sounds/sad/5.wav" type="AudioStream" id=45]
+[ext_resource path="res://assets/sounds/sad/10.wav" type="AudioStream" id=46]
+[ext_resource path="res://assets/sounds/sad/9.wav" type="AudioStream" id=47]
+[ext_resource path="res://assets/sounds/notes/C/C6.wav" type="AudioStream" id=48]
+[ext_resource path="res://assets/sounds/notes/Cs/Cs4.wav" type="AudioStream" id=49]
+[ext_resource path="res://assets/sounds/notes/F/F5.wav" type="AudioStream" id=50]
+[ext_resource path="res://assets/sounds/notes/Fs/Fs5.wav" type="AudioStream" id=51]
+[ext_resource path="res://assets/sounds/notes/G/G5.wav" type="AudioStream" id=52]
+[ext_resource path="res://assets/sounds/notes/Gs/Gs4.wav" type="AudioStream" id=53]
+[ext_resource path="res://assets/sounds/notes/A/A4.wav" type="AudioStream" id=54]
+[ext_resource path="res://assets/sounds/notes/F/F4.wav" type="AudioStream" id=55]
+[ext_resource path="res://assets/sounds/notes/C/C4.wav" type="AudioStream" id=56]
+[ext_resource path="res://assets/sounds/notes/A/A5.wav" type="AudioStream" id=57]
+[ext_resource path="res://assets/sounds/notes/As/As5.wav" type="AudioStream" id=58]
+[ext_resource path="res://assets/sounds/notes/F/F3.wav" type="AudioStream" id=59]
+[ext_resource path="res://assets/sounds/notes/E/E5.wav" type="AudioStream" id=60]
+[ext_resource path="res://assets/sounds/notes/As/As3.wav" type="AudioStream" id=61]
+[ext_resource path="res://assets/sounds/notes/B/B3.wav" type="AudioStream" id=62]
+[ext_resource path="res://assets/sounds/notes/Cs/Cs3.wav" type="AudioStream" id=63]
+[ext_resource path="res://assets/sounds/notes/Ds/Ds3.wav" type="AudioStream" id=64]
+[ext_resource path="res://assets/sounds/notes/C/C3.wav" type="AudioStream" id=65]
+[ext_resource path="res://assets/sounds/notes/Fs/Fs3.wav" type="AudioStream" id=66]
+[ext_resource path="res://assets/sounds/notes/Fs/Fs4.wav" type="AudioStream" id=67]
+[ext_resource path="res://assets/sounds/notes/D/D3.wav" type="AudioStream" id=68]
+[ext_resource path="res://assets/sounds/notes/D/D5.wav" type="AudioStream" id=69]
+[ext_resource path="res://assets/sounds/notes/Ds/Ds5.wav" type="AudioStream" id=70]
+[ext_resource path="res://assets/sounds/notes/E/E4.wav" type="AudioStream" id=71]
+[ext_resource path="res://assets/sounds/notes/G/G3.wav" type="AudioStream" id=72]
+[ext_resource path="res://assets/sounds/notes/C/C5.wav" type="AudioStream" id=73]
+[ext_resource path="res://assets/sounds/notes/D/D4.wav" type="AudioStream" id=74]
+[ext_resource path="res://assets/sounds/notes/E/E3.wav" type="AudioStream" id=75]
+[ext_resource path="res://assets/sounds/notes/B/B5.wav" type="AudioStream" id=76]
+[ext_resource path="res://assets/sounds/notes/G/G4.wav" type="AudioStream" id=77]
+[ext_resource path="res://assets/sounds/notes/As/As4.wav" type="AudioStream" id=78]
+[ext_resource path="res://assets/sounds/notes/B/B4.wav" type="AudioStream" id=79]
+[ext_resource path="res://assets/sounds/notes/Cs/Cs5.wav" type="AudioStream" id=80]
+[ext_resource path="res://assets/sounds/notes/Ds/Ds4.wav" type="AudioStream" id=81]
+[ext_resource path="res://assets/sounds/notes/Gs/Gs5.wav" type="AudioStream" id=82]
+[ext_resource path="res://assets/sounds/notes/A/A3.wav" type="AudioStream" id=83]
+[ext_resource path="res://assets/sounds/notes1/Fs/Fs4.wav" type="AudioStream" id=84]
+[ext_resource path="res://assets/sounds/notes1/Fs/Fs5.wav" type="AudioStream" id=85]
+[ext_resource path="res://assets/sounds/notes1/G/G3.wav" type="AudioStream" id=86]
+[ext_resource path="res://assets/sounds/notes1/Ds/Ds3.wav" type="AudioStream" id=87]
+[ext_resource path="res://assets/sounds/notes1/E/E3.wav" type="AudioStream" id=88]
+[ext_resource path="res://assets/sounds/notes1/Cs/Cs4.wav" type="AudioStream" id=89]
+[ext_resource path="res://assets/sounds/notes1/Ds/Ds5.wav" type="AudioStream" id=90]
+[ext_resource path="res://assets/sounds/notes1/D/D3.wav" type="AudioStream" id=91]
+[ext_resource path="res://assets/sounds/notes1/E/E4.wav" type="AudioStream" id=92]
+[ext_resource path="res://assets/sounds/notes1/C/C3.wav" type="AudioStream" id=93]
+[ext_resource path="res://assets/sounds/notes2/D/D5.wav" type="AudioStream" id=94]
+[ext_resource path="res://assets/sounds/notes2/D/D4.wav" type="AudioStream" id=95]
+[ext_resource path="res://assets/sounds/notes2/Ds/Ds4.wav" type="AudioStream" id=96]
+[ext_resource path="res://assets/sounds/notes2/E/E4.wav" type="AudioStream" id=97]
+[ext_resource path="res://assets/sounds/notes2/C/C4.wav" type="AudioStream" id=98]
+[ext_resource path="res://assets/sounds/notes2/G/G5.wav" type="AudioStream" id=99]
+[ext_resource path="res://assets/sounds/notes/Gs/Gs3.wav" type="AudioStream" id=100]
+[ext_resource path="res://assets/sounds/notes1/G/G5.wav" type="AudioStream" id=101]
+[ext_resource path="res://assets/sounds/notes1/As/As4.wav" type="AudioStream" id=102]
+[ext_resource path="res://assets/sounds/notes1/Gs/Gs3.wav" type="AudioStream" id=103]
+[ext_resource path="res://assets/sounds/notes2/A/A3.wav" type="AudioStream" id=104]
+[ext_resource path="res://assets/sounds/notes1/As/As3.wav" type="AudioStream" id=105]
+[ext_resource path="res://assets/sounds/notes2/As/As4.wav" type="AudioStream" id=106]
+[ext_resource path="res://assets/sounds/notes1/Gs/Gs4.wav" type="AudioStream" id=107]
+[ext_resource path="res://assets/sounds/notes1/A/A5.wav" type="AudioStream" id=108]
+[ext_resource path="res://assets/sounds/notes2/Fs/Fs5.wav" type="AudioStream" id=109]
+[ext_resource path="res://assets/sounds/notes1/G/G4.wav" type="AudioStream" id=110]
+[ext_resource path="res://assets/sounds/notes2/Cs/Cs3.wav" type="AudioStream" id=111]
+[ext_resource path="res://assets/sounds/notes1/B/B5.wav" type="AudioStream" id=112]
+[ext_resource path="res://assets/sounds/notes2/Fs/Fs3.wav" type="AudioStream" id=113]
+[ext_resource path="res://assets/sounds/notes1/B/B3.wav" type="AudioStream" id=114]
+[ext_resource path="res://assets/sounds/notes1/B/B4.wav" type="AudioStream" id=115]
+[ext_resource path="res://assets/sounds/notes2/C/C6.wav" type="AudioStream" id=116]
+[ext_resource path="res://assets/sounds/notes2/Gs/Gs3.wav" type="AudioStream" id=117]
+[ext_resource path="res://assets/sounds/notes2/Fs/Fs4.wav" type="AudioStream" id=118]
+[ext_resource path="res://assets/sounds/notes2/Gs/Gs5.wav" type="AudioStream" id=119]
+[ext_resource path="res://assets/sounds/notes2/Ds/Ds3.wav" type="AudioStream" id=120]
+[ext_resource path="res://assets/sounds/notes2/As/As3.wav" type="AudioStream" id=121]
+[ext_resource path="res://assets/sounds/notes2/E/E5.wav" type="AudioStream" id=122]
+[ext_resource path="res://assets/sounds/notes2/F/F3.wav" type="AudioStream" id=123]
+[ext_resource path="res://assets/sounds/notes1/A/A3.wav" type="AudioStream" id=124]
+[ext_resource path="res://assets/sounds/notes2/C/C5.wav" type="AudioStream" id=125]
+[ext_resource path="res://assets/sounds/notes2/G/G4.wav" type="AudioStream" id=126]
+[ext_resource path="res://assets/sounds/notes2/A/A4.wav" type="AudioStream" id=127]
+[ext_resource path="res://assets/sounds/notes2/Gs/Gs4.wav" type="AudioStream" id=128]
+[ext_resource path="res://assets/sounds/notes1/A/A4.wav" type="AudioStream" id=129]
+[ext_resource path="res://assets/sounds/notes2/As/As5.wav" type="AudioStream" id=130]
+[ext_resource path="res://assets/sounds/notes2/B/B3.wav" type="AudioStream" id=131]
+[ext_resource path="res://assets/sounds/notes2/E/E3.wav" type="AudioStream" id=132]
+[ext_resource path="res://assets/sounds/notes2/C/C3.wav" type="AudioStream" id=133]
+[ext_resource path="res://assets/sounds/notes2/Cs/Cs5.wav" type="AudioStream" id=134]
+[ext_resource path="res://assets/sounds/notes2/F/F4.wav" type="AudioStream" id=135]
+[ext_resource path="res://assets/sounds/notes2/B/B5.wav" type="AudioStream" id=136]
+[ext_resource path="res://assets/sounds/notes2/D/D3.wav" type="AudioStream" id=137]
+[ext_resource path="res://assets/sounds/notes1/As/As5.wav" type="AudioStream" id=138]
+[ext_resource path="res://assets/sounds/notes1/Gs/Gs5.wav" type="AudioStream" id=139]
+[ext_resource path="res://assets/sounds/notes2/Cs/Cs4.wav" type="AudioStream" id=140]
+[ext_resource path="res://assets/sounds/notes2/Ds/Ds5.wav" type="AudioStream" id=141]
+[ext_resource path="res://assets/sounds/notes2/G/G3.wav" type="AudioStream" id=142]
+[ext_resource path="res://assets/sounds/notes2/A/A5.wav" type="AudioStream" id=143]
+[ext_resource path="res://assets/sounds/notes2/B/B4.wav" type="AudioStream" id=144]
+[ext_resource path="res://assets/sounds/notes2/F/F5.wav" type="AudioStream" id=145]
+
+[node name="sounds" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="no_touches_left" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "general_sound"
+
+[node name="no_hints_left" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "general_sound"
+
+[node name="button_pressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "sfx"
+
+[node name="move_up" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "sfx"
+
+[node name="move_down" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+bus = "sfx"
+
+[node name="cancel_tile" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+bus = "general_sound"
+
+[node name="nature_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -14.315
+bus = "piano_level_music"
+
+[node name="piano_level" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = 0.186
+bus = "piano_level_music"
+
+[node name="very_relaxing_piano" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = 0.186
+bus = "piano_level_music"
+
+[node name="rain_thunder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -11.023
+bus = "piano_level_music"
+
+[node name="level2_sounds2" type="Node2D" parent="."]
+
+[node name="1" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 30 )
+bus = "general_sound"
+
+[node name="2" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 31 )
+bus = "general_sound"
+
+[node name="3" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 32 )
+bus = "general_sound"
+
+[node name="4" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 26 )
+bus = "general_sound"
+
+[node name="5" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 34 )
+bus = "general_sound"
+
+[node name="6" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 35 )
+bus = "general_sound"
+
+[node name="7" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 33 )
+bus = "general_sound"
+
+[node name="8" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 24 )
+bus = "general_sound"
+
+[node name="9" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 25 )
+bus = "general_sound"
+
+[node name="10" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 27 )
+bus = "general_sound"
+
+[node name="11" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 28 )
+bus = "general_sound"
+
+[node name="12" type="AudioStreamPlayer" parent="level2_sounds2"]
+stream = ExtResource( 29 )
+bus = "general_sound"
+
+[node name="level3_sounds3" type="Node2D" parent="."]
+
+[node name="1" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 43 )
+bus = "general_sound"
+
+[node name="2" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 42 )
+bus = "general_sound"
+
+[node name="3" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 44 )
+bus = "general_sound"
+
+[node name="4" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 39 )
+bus = "general_sound"
+
+[node name="5" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 45 )
+bus = "general_sound"
+
+[node name="6" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 40 )
+bus = "general_sound"
+
+[node name="7" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 41 )
+bus = "general_sound"
+
+[node name="8" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 38 )
+bus = "general_sound"
+
+[node name="9" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 47 )
+bus = "general_sound"
+
+[node name="10" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 46 )
+bus = "general_sound"
+
+[node name="11" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 36 )
+bus = "general_sound"
+
+[node name="12" type="AudioStreamPlayer" parent="level3_sounds3"]
+stream = ExtResource( 37 )
+bus = "general_sound"
+
+[node name="piano" type="Node2D" parent="."]
+
+[node name="C" type="Node2D" parent="piano"]
+
+[node name="C3" type="AudioStreamPlayer" parent="piano/C"]
+stream = ExtResource( 65 )
+bus = "general_sound"
+
+[node name="C4" type="AudioStreamPlayer" parent="piano/C"]
+stream = ExtResource( 56 )
+bus = "general_sound"
+
+[node name="C5" type="AudioStreamPlayer" parent="piano/C"]
+stream = ExtResource( 73 )
+bus = "general_sound"
+
+[node name="C6" type="AudioStreamPlayer" parent="piano/C"]
+stream = ExtResource( 48 )
+bus = "general_sound"
+
+[node name="Cs" type="Node2D" parent="piano"]
+
+[node name="Cs3" type="AudioStreamPlayer" parent="piano/Cs"]
+stream = ExtResource( 63 )
+bus = "general_sound"
+
+[node name="Cs4" type="AudioStreamPlayer" parent="piano/Cs"]
+stream = ExtResource( 49 )
+bus = "general_sound"
+
+[node name="Cs5" type="AudioStreamPlayer" parent="piano/Cs"]
+stream = ExtResource( 80 )
+bus = "general_sound"
+
+[node name="D" type="Node2D" parent="piano"]
+
+[node name="D3" type="AudioStreamPlayer" parent="piano/D"]
+stream = ExtResource( 68 )
+bus = "general_sound"
+
+[node name="D4" type="AudioStreamPlayer" parent="piano/D"]
+stream = ExtResource( 74 )
+bus = "general_sound"
+
+[node name="D5" type="AudioStreamPlayer" parent="piano/D"]
+stream = ExtResource( 69 )
+bus = "general_sound"
+
+[node name="Ds" type="Node2D" parent="piano"]
+
+[node name="Ds3" type="AudioStreamPlayer" parent="piano/Ds"]
+stream = ExtResource( 64 )
+bus = "general_sound"
+
+[node name="Ds4" type="AudioStreamPlayer" parent="piano/Ds"]
+stream = ExtResource( 81 )
+bus = "general_sound"
+
+[node name="Ds5" type="AudioStreamPlayer" parent="piano/Ds"]
+stream = ExtResource( 70 )
+bus = "general_sound"
+
+[node name="E" type="Node2D" parent="piano"]
+
+[node name="E3" type="AudioStreamPlayer" parent="piano/E"]
+stream = ExtResource( 75 )
+bus = "general_sound"
+
+[node name="E4" type="AudioStreamPlayer" parent="piano/E"]
+stream = ExtResource( 71 )
+bus = "general_sound"
+
+[node name="E5" type="AudioStreamPlayer" parent="piano/E"]
+stream = ExtResource( 60 )
+bus = "general_sound"
+
+[node name="F" type="Node2D" parent="piano"]
+
+[node name="F3" type="AudioStreamPlayer" parent="piano/F"]
+stream = ExtResource( 59 )
+bus = "general_sound"
+
+[node name="F4" type="AudioStreamPlayer" parent="piano/F"]
+stream = ExtResource( 55 )
+bus = "general_sound"
+
+[node name="F5" type="AudioStreamPlayer" parent="piano/F"]
+stream = ExtResource( 50 )
+bus = "general_sound"
+
+[node name="Fs" type="Node2D" parent="piano"]
+
+[node name="Fs3" type="AudioStreamPlayer" parent="piano/Fs"]
+stream = ExtResource( 66 )
+bus = "general_sound"
+
+[node name="Fs4" type="AudioStreamPlayer" parent="piano/Fs"]
+stream = ExtResource( 67 )
+bus = "general_sound"
+
+[node name="Fs5" type="AudioStreamPlayer" parent="piano/Fs"]
+stream = ExtResource( 51 )
+bus = "general_sound"
+
+[node name="G" type="Node2D" parent="piano"]
+
+[node name="G3" type="AudioStreamPlayer" parent="piano/G"]
+stream = ExtResource( 72 )
+bus = "general_sound"
+
+[node name="G4" type="AudioStreamPlayer" parent="piano/G"]
+stream = ExtResource( 77 )
+bus = "general_sound"
+
+[node name="G5" type="AudioStreamPlayer" parent="piano/G"]
+stream = ExtResource( 52 )
+bus = "general_sound"
+
+[node name="Gs" type="Node2D" parent="piano"]
+
+[node name="Gs3" type="AudioStreamPlayer" parent="piano/Gs"]
+stream = ExtResource( 100 )
+bus = "general_sound"
+
+[node name="Gs4" type="AudioStreamPlayer" parent="piano/Gs"]
+stream = ExtResource( 53 )
+bus = "general_sound"
+
+[node name="Gs5" type="AudioStreamPlayer" parent="piano/Gs"]
+stream = ExtResource( 82 )
+bus = "general_sound"
+
+[node name="A" type="Node2D" parent="piano"]
+
+[node name="A3" type="AudioStreamPlayer" parent="piano/A"]
+stream = ExtResource( 83 )
+bus = "general_sound"
+
+[node name="A4" type="AudioStreamPlayer" parent="piano/A"]
+stream = ExtResource( 54 )
+bus = "general_sound"
+
+[node name="A5" type="AudioStreamPlayer" parent="piano/A"]
+stream = ExtResource( 57 )
+bus = "general_sound"
+
+[node name="As" type="Node2D" parent="piano"]
+
+[node name="As3" type="AudioStreamPlayer" parent="piano/As"]
+stream = ExtResource( 61 )
+bus = "general_sound"
+
+[node name="As4" type="AudioStreamPlayer" parent="piano/As"]
+stream = ExtResource( 78 )
+bus = "general_sound"
+
+[node name="As5" type="AudioStreamPlayer" parent="piano/As"]
+stream = ExtResource( 58 )
+bus = "general_sound"
+
+[node name="B" type="Node2D" parent="piano"]
+
+[node name="B3" type="AudioStreamPlayer" parent="piano/B"]
+stream = ExtResource( 62 )
+bus = "general_sound"
+
+[node name="B4" type="AudioStreamPlayer" parent="piano/B"]
+stream = ExtResource( 79 )
+bus = "general_sound"
+
+[node name="B5" type="AudioStreamPlayer" parent="piano/B"]
+stream = ExtResource( 76 )
+bus = "general_sound"
+
+[node name="purple_sound" type="Node2D" parent="."]
+
+[node name="C" type="Node2D" parent="purple_sound"]
+
+[node name="C3" type="AudioStreamPlayer" parent="purple_sound/C"]
+stream = ExtResource( 133 )
+bus = "general_sound"
+
+[node name="C4" type="AudioStreamPlayer" parent="purple_sound/C"]
+stream = ExtResource( 98 )
+bus = "general_sound"
+
+[node name="C5" type="AudioStreamPlayer" parent="purple_sound/C"]
+stream = ExtResource( 125 )
+bus = "general_sound"
+
+[node name="C6" type="AudioStreamPlayer" parent="purple_sound/C"]
+stream = ExtResource( 116 )
+bus = "general_sound"
+
+[node name="Cs" type="Node2D" parent="purple_sound"]
+
+[node name="Cs3" type="AudioStreamPlayer" parent="purple_sound/Cs"]
+stream = ExtResource( 111 )
+bus = "general_sound"
+
+[node name="Cs4" type="AudioStreamPlayer" parent="purple_sound/Cs"]
+stream = ExtResource( 140 )
+bus = "general_sound"
+
+[node name="Cs5" type="AudioStreamPlayer" parent="purple_sound/Cs"]
+stream = ExtResource( 134 )
+bus = "general_sound"
+
+[node name="D" type="Node2D" parent="purple_sound"]
+
+[node name="D3" type="AudioStreamPlayer" parent="purple_sound/D"]
+stream = ExtResource( 137 )
+bus = "general_sound"
+
+[node name="D4" type="AudioStreamPlayer" parent="purple_sound/D"]
+stream = ExtResource( 95 )
+bus = "general_sound"
+
+[node name="D5" type="AudioStreamPlayer" parent="purple_sound/D"]
+stream = ExtResource( 94 )
+bus = "general_sound"
+
+[node name="Ds" type="Node2D" parent="purple_sound"]
+
+[node name="Ds3" type="AudioStreamPlayer" parent="purple_sound/Ds"]
+stream = ExtResource( 120 )
+bus = "general_sound"
+
+[node name="Ds4" type="AudioStreamPlayer" parent="purple_sound/Ds"]
+stream = ExtResource( 96 )
+bus = "general_sound"
+
+[node name="Ds5" type="AudioStreamPlayer" parent="purple_sound/Ds"]
+stream = ExtResource( 141 )
+bus = "general_sound"
+
+[node name="E" type="Node2D" parent="purple_sound"]
+
+[node name="E3" type="AudioStreamPlayer" parent="purple_sound/E"]
+stream = ExtResource( 132 )
+bus = "general_sound"
+
+[node name="E4" type="AudioStreamPlayer" parent="purple_sound/E"]
+stream = ExtResource( 97 )
+bus = "general_sound"
+
+[node name="E5" type="AudioStreamPlayer" parent="purple_sound/E"]
+stream = ExtResource( 122 )
+bus = "general_sound"
+
+[node name="F" type="Node2D" parent="purple_sound"]
+
+[node name="F3" type="AudioStreamPlayer" parent="purple_sound/F"]
+stream = ExtResource( 123 )
+bus = "general_sound"
+
+[node name="F4" type="AudioStreamPlayer" parent="purple_sound/F"]
+stream = ExtResource( 135 )
+bus = "general_sound"
+
+[node name="F5" type="AudioStreamPlayer" parent="purple_sound/F"]
+stream = ExtResource( 145 )
+bus = "general_sound"
+
+[node name="Fs" type="Node2D" parent="purple_sound"]
+
+[node name="Fs3" type="AudioStreamPlayer" parent="purple_sound/Fs"]
+stream = ExtResource( 113 )
+bus = "general_sound"
+
+[node name="Fs4" type="AudioStreamPlayer" parent="purple_sound/Fs"]
+stream = ExtResource( 118 )
+bus = "general_sound"
+
+[node name="Fs5" type="AudioStreamPlayer" parent="purple_sound/Fs"]
+stream = ExtResource( 109 )
+bus = "general_sound"
+
+[node name="G" type="Node2D" parent="purple_sound"]
+
+[node name="G3" type="AudioStreamPlayer" parent="purple_sound/G"]
+stream = ExtResource( 142 )
+bus = "general_sound"
+
+[node name="G4" type="AudioStreamPlayer" parent="purple_sound/G"]
+stream = ExtResource( 126 )
+bus = "general_sound"
+
+[node name="G5" type="AudioStreamPlayer" parent="purple_sound/G"]
+stream = ExtResource( 99 )
+bus = "general_sound"
+
+[node name="Gs" type="Node2D" parent="purple_sound"]
+
+[node name="Gs3" type="AudioStreamPlayer" parent="purple_sound/Gs"]
+stream = ExtResource( 117 )
+bus = "general_sound"
+
+[node name="Gs4" type="AudioStreamPlayer" parent="purple_sound/Gs"]
+stream = ExtResource( 128 )
+bus = "general_sound"
+
+[node name="Gs5" type="AudioStreamPlayer" parent="purple_sound/Gs"]
+stream = ExtResource( 119 )
+bus = "general_sound"
+
+[node name="A" type="Node2D" parent="purple_sound"]
+
+[node name="A3" type="AudioStreamPlayer" parent="purple_sound/A"]
+stream = ExtResource( 104 )
+bus = "general_sound"
+
+[node name="A4" type="AudioStreamPlayer" parent="purple_sound/A"]
+stream = ExtResource( 127 )
+bus = "general_sound"
+
+[node name="A5" type="AudioStreamPlayer" parent="purple_sound/A"]
+stream = ExtResource( 143 )
+bus = "general_sound"
+
+[node name="As" type="Node2D" parent="purple_sound"]
+
+[node name="As3" type="AudioStreamPlayer" parent="purple_sound/As"]
+stream = ExtResource( 121 )
+bus = "general_sound"
+
+[node name="As4" type="AudioStreamPlayer" parent="purple_sound/As"]
+stream = ExtResource( 106 )
+bus = "general_sound"
+
+[node name="As5" type="AudioStreamPlayer" parent="purple_sound/As"]
+stream = ExtResource( 130 )
+bus = "general_sound"
+
+[node name="B" type="Node2D" parent="purple_sound"]
+
+[node name="B3" type="AudioStreamPlayer" parent="purple_sound/B"]
+stream = ExtResource( 131 )
+bus = "general_sound"
+
+[node name="B4" type="AudioStreamPlayer" parent="purple_sound/B"]
+stream = ExtResource( 144 )
+bus = "general_sound"
+
+[node name="B5" type="AudioStreamPlayer" parent="purple_sound/B"]
+stream = ExtResource( 136 )
+bus = "general_sound"
+
+[node name="music_box" type="Node2D" parent="."]
+
+[node name="C" type="Node2D" parent="music_box"]
+
+[node name="C3" type="AudioStreamPlayer" parent="music_box/C"]
+stream = ExtResource( 93 )
+bus = "general_sound"
+
+[node name="C4" type="AudioStreamPlayer" parent="music_box/C"]
+stream = ExtResource( 93 )
+pitch_scale = 2.0
+bus = "general_sound"
+
+[node name="C5" type="AudioStreamPlayer" parent="music_box/C"]
+stream = ExtResource( 15 )
+bus = "general_sound"
+
+[node name="C6" type="AudioStreamPlayer" parent="music_box/C"]
+stream = ExtResource( 16 )
+bus = "general_sound"
+
+[node name="Cs" type="Node2D" parent="music_box"]
+
+[node name="Cs3" type="AudioStreamPlayer" parent="music_box/Cs"]
+stream = ExtResource( 12 )
+bus = "general_sound"
+
+[node name="Cs4" type="AudioStreamPlayer" parent="music_box/Cs"]
+stream = ExtResource( 89 )
+bus = "general_sound"
+
+[node name="Cs5" type="AudioStreamPlayer" parent="music_box/Cs"]
+stream = ExtResource( 13 )
+bus = "general_sound"
+
+[node name="D" type="Node2D" parent="music_box"]
+
+[node name="D3" type="AudioStreamPlayer" parent="music_box/D"]
+stream = ExtResource( 91 )
+bus = "general_sound"
+
+[node name="D4" type="AudioStreamPlayer" parent="music_box/D"]
+stream = ExtResource( 14 )
+bus = "general_sound"
+
+[node name="D5" type="AudioStreamPlayer" parent="music_box/D"]
+stream = ExtResource( 17 )
+bus = "general_sound"
+
+[node name="Ds" type="Node2D" parent="music_box"]
+
+[node name="Ds3" type="AudioStreamPlayer" parent="music_box/Ds"]
+stream = ExtResource( 87 )
+bus = "general_sound"
+
+[node name="Ds4" type="AudioStreamPlayer" parent="music_box/Ds"]
+stream = ExtResource( 18 )
+bus = "general_sound"
+
+[node name="Ds5" type="AudioStreamPlayer" parent="music_box/Ds"]
+stream = ExtResource( 90 )
+bus = "general_sound"
+
+[node name="E" type="Node2D" parent="music_box"]
+
+[node name="E3" type="AudioStreamPlayer" parent="music_box/E"]
+stream = ExtResource( 88 )
+bus = "general_sound"
+
+[node name="E4" type="AudioStreamPlayer" parent="music_box/E"]
+stream = ExtResource( 92 )
+bus = "general_sound"
+
+[node name="E5" type="AudioStreamPlayer" parent="music_box/E"]
+stream = ExtResource( 19 )
+bus = "general_sound"
+
+[node name="F" type="Node2D" parent="music_box"]
+
+[node name="F3" type="AudioStreamPlayer" parent="music_box/F"]
+stream = ExtResource( 20 )
+bus = "general_sound"
+
+[node name="F4" type="AudioStreamPlayer" parent="music_box/F"]
+stream = ExtResource( 21 )
+bus = "general_sound"
+
+[node name="F5" type="AudioStreamPlayer" parent="music_box/F"]
+stream = ExtResource( 22 )
+bus = "general_sound"
+
+[node name="Fs" type="Node2D" parent="music_box"]
+
+[node name="Fs3" type="AudioStreamPlayer" parent="music_box/Fs"]
+stream = ExtResource( 23 )
+bus = "general_sound"
+
+[node name="Fs4" type="AudioStreamPlayer" parent="music_box/Fs"]
+stream = ExtResource( 84 )
+bus = "general_sound"
+
+[node name="Fs5" type="AudioStreamPlayer" parent="music_box/Fs"]
+stream = ExtResource( 85 )
+bus = "general_sound"
+
+[node name="G" type="Node2D" parent="music_box"]
+
+[node name="G3" type="AudioStreamPlayer" parent="music_box/G"]
+stream = ExtResource( 86 )
+bus = "general_sound"
+
+[node name="G4" type="AudioStreamPlayer" parent="music_box/G"]
+stream = ExtResource( 110 )
+bus = "general_sound"
+
+[node name="G5" type="AudioStreamPlayer" parent="music_box/G"]
+stream = ExtResource( 101 )
+bus = "general_sound"
+
+[node name="Gs" type="Node2D" parent="music_box"]
+
+[node name="Gs3" type="AudioStreamPlayer" parent="music_box/Gs"]
+stream = ExtResource( 103 )
+bus = "general_sound"
+
+[node name="Gs4" type="AudioStreamPlayer" parent="music_box/Gs"]
+stream = ExtResource( 107 )
+bus = "general_sound"
+
+[node name="Gs5" type="AudioStreamPlayer" parent="music_box/Gs"]
+stream = ExtResource( 139 )
+bus = "general_sound"
+
+[node name="A" type="Node2D" parent="music_box"]
+
+[node name="A3" type="AudioStreamPlayer" parent="music_box/A"]
+stream = ExtResource( 124 )
+bus = "general_sound"
+
+[node name="A4" type="AudioStreamPlayer" parent="music_box/A"]
+stream = ExtResource( 129 )
+bus = "general_sound"
+
+[node name="A5" type="AudioStreamPlayer" parent="music_box/A"]
+stream = ExtResource( 108 )
+bus = "general_sound"
+
+[node name="As" type="Node2D" parent="music_box"]
+
+[node name="As3" type="AudioStreamPlayer" parent="music_box/As"]
+stream = ExtResource( 105 )
+bus = "general_sound"
+
+[node name="As4" type="AudioStreamPlayer" parent="music_box/As"]
+stream = ExtResource( 102 )
+bus = "general_sound"
+
+[node name="As5" type="AudioStreamPlayer" parent="music_box/As"]
+stream = ExtResource( 138 )
+bus = "general_sound"
+
+[node name="B" type="Node2D" parent="music_box"]
+
+[node name="B3" type="AudioStreamPlayer" parent="music_box/B"]
+stream = ExtResource( 114 )
+bus = "general_sound"
+
+[node name="B4" type="AudioStreamPlayer" parent="music_box/B"]
+stream = ExtResource( 115 )
+bus = "general_sound"
+
+[node name="B5" type="AudioStreamPlayer" parent="music_box/B"]
+stream = ExtResource( 112 )
+bus = "general_sound"

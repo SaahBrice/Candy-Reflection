@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Mirror Land"
+run/main_scene="res://scenes/MainMenu.tscn"
+boot_splash/image="res://assets/levels menu/icons2.png"
+config/icon="res://assets/new_worlds/l3.png"
+config/quit_on_go_back=false
+config/Version="1.0.1"
+
+[autoload]
+
+Matrix="*res://scripts/autoload/matrix.gd"
+SceneController="*res://scripts/autoload/Scene_controller.gd"
+AdvertManager="*res://scripts/advert_manager.gd"
+ScenesContainer="*res://scripts/scenes_container.gd"
+Sounds="*res://scenes/sound/sounds.tscn"
+SettingsWindows="*res://scenes/settings/settings_windows.tscn"
+GameSaver="*res://save/GameSaver.gd"
+
+[display]
+
+window/size/width=720
+window/size/height=1548
+window/size/test_width=220
+window/size/test_height=473
+window/dpi/allow_hidpi=true
+window/handheld/orientation="portrait"
+window/stretch/mode="viewport"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

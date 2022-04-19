@@ -1,0 +1,194 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/new_worlds/filler_level1.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Level1_Scene.gd" type="Script" id=11]
+[ext_resource path="res://assets/levels menu/left_button.png" type="Texture" id=12]
+[ext_resource path="res://assets/background_game_G.png" type="Texture" id=13]
+[ext_resource path="res://assets/levels menu/explorer_im.png" type="Texture" id=14]
+[ext_resource path="res://assets/levels menu/explorer_tx.png" type="Texture" id=15]
+[ext_resource path="res://assets/levels menu/master_im.png" type="Texture" id=16]
+[ext_resource path="res://assets/levels menu/master_tx.png" type="Texture" id=17]
+[ext_resource path="res://assets/new_worlds/l2.png" type="Texture" id=18]
+[ext_resource path="res://assets/levels menu/PLAY.png" type="Texture" id=20]
+[ext_resource path="res://assets/new_worlds/harmony.png" type="Texture" id=21]
+[ext_resource path="res://assets/levels menu/PLAY_D.png" type="Texture" id=22]
+[ext_resource path="res://assets/new_worlds/l1.png" type="Texture" id=23]
+[ext_resource path="res://assets/new_worlds/L3FILLER.png" type="Texture" id=24]
+[ext_resource path="res://assets/levels menu/sadness.png" type="Texture" id=25]
+[ext_resource path="res://assets/new_worlds/HOME.png" type="Texture" id=26]
+[ext_resource path="res://assets/new_worlds/l3.png" type="Texture" id=27]
+[ext_resource path="res://assets/levels menu/CIRCLES.png" type="Texture" id=28]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.671875, 0.930786, 1, 1, 1, 1, 1, 0 )
+
+[node name="Level1_scene" type="CanvasLayer"]
+script = ExtResource( 11 )
+
+[node name="BACKGROUND" type="Sprite" parent="."]
+modulate = Color( 0.203922, 0.309804, 0.403922, 1 )
+position = Vector2( 363.5, 787.75 )
+scale = Vector2( 1.08276, 1.0072 )
+texture = ExtResource( 13 )
+
+[node name="BACKGROUND2" type="Sprite" parent="."]
+modulate = Color( 0.486275, 0.027451, 0.392157, 1 )
+position = Vector2( 1777, 764 )
+scale = Vector2( 1.35862, 1.0072 )
+texture = ExtResource( 13 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 374, 789 )
+amount = 20
+lifetime = 10.0
+lifetime_randomness = 0.32
+texture = ExtResource( 28 )
+emission_shape = 2
+emission_rect_extents = Vector2( 400, 800 )
+direction = Vector2( 0, 0 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 40.0
+initial_velocity_random = 0.54
+scale_amount = 0.2
+scale_amount_random = 1.0
+color_ramp = SubResource( 1 )
+
+[node name="LEVELS" type="Node2D" parent="."]
+
+[node name="l1" type="TextureProgress" parent="LEVELS"]
+margin_left = 84.0
+margin_top = 538.0
+margin_right = 703.0
+margin_bottom = 1157.0
+rect_scale = Vector2( 0.9, 0.9 )
+max_value = 25.0
+step = 0.01
+value = 25.0
+texture_under = ExtResource( 23 )
+texture_progress = ExtResource( 1 )
+fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Sprite" parent="LEVELS/l1"]
+position = Vector2( 325.556, 642.222 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 26 )
+
+[node name="l2" type="TextureProgress" parent="LEVELS"]
+margin_left = 784.0
+margin_top = 538.0
+margin_right = 1403.0
+margin_bottom = 1157.0
+rect_scale = Vector2( 0.9, 0.9 )
+max_value = 30.0
+step = 0.01
+value = 30.0
+texture_under = ExtResource( 18 )
+texture_progress = ExtResource( 1 )
+fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Sprite" parent="LEVELS/l2"]
+position = Vector2( 325.556, 642.222 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 21 )
+
+[node name="l3" type="TextureProgress" parent="LEVELS"]
+margin_left = 1532.0
+margin_top = 573.0
+margin_right = 2151.0
+margin_bottom = 1192.0
+rect_scale = Vector2( 0.9, 0.9 )
+max_value = 35.0
+step = 0.01
+value = 35.0
+texture_under = ExtResource( 27 )
+texture_progress = ExtResource( 24 )
+fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Sprite" parent="LEVELS/l3"]
+position = Vector2( 263.333, 645.555 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 25 )
+
+[node name="infinity_mode" type="TextureButton" parent="."]
+margin_left = 82.0
+margin_top = 129.0
+margin_right = 308.0
+margin_bottom = 454.0
+texture_normal = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Sprite" parent="infinity_mode"]
+position = Vector2( 108, 274.25 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 15 )
+
+[node name="time_infinity_mode" type="TextureButton" parent="."]
+margin_left = 414.0
+margin_top = 135.0
+margin_right = 640.0
+margin_bottom = 446.0
+texture_normal = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Sprite" parent="time_infinity_mode"]
+position = Vector2( 111, 267 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 17 )
+
+[node name="move_left" type="TextureButton" parent="."]
+margin_left = 17.0
+margin_top = 778.0
+margin_right = 59.0
+margin_bottom = 860.0
+texture_normal = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move_right" type="TextureButton" parent="."]
+margin_left = 664.0
+margin_top = 756.0
+margin_right = 706.0
+margin_bottom = 838.0
+texture_normal = ExtResource( 12 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play" type="TextureButton" parent="."]
+margin_left = 270.0
+margin_top = 1290.0
+margin_right = 487.0
+margin_bottom = 1384.0
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="overlay" type="Sprite" parent="."]
+modulate = Color( 0.00784314, 0.0313726, 0.0705882, 0 )
+position = Vector2( 335, 820 )
+scale = Vector2( 1.23379, 1.07671 )
+texture = ExtResource( 13 )
+
+[connection signal="pressed" from="move_left" to="." method="_on_move_left_pressed"]
+[connection signal="pressed" from="move_right" to="." method="_on_move_right_pressed"]
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]

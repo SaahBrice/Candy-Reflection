@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Fs5.wav-e81b15095e6ab847ce8b5654bb86dd6b.sample"
+
+[deps]
+
+source_file="res://assets/sounds/notes/Fs/Fs5.wav"
+dest_files=[ "res://.import/Fs5.wav-e81b15095e6ab847ce8b5654bb86dd6b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
