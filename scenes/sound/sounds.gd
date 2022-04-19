@@ -196,7 +196,8 @@ func _ready() -> void:
 	else:
 		print("Neither minor nor major")
 
-
+func sound_variable_shuffler():
+	pass
 
 func get_sound(level, collected_sound):
 	var position_of_sound
