@@ -35,15 +35,15 @@ func save_game():
 	new_save.number_of_cancles = Matrix.number_of_cancles
 	
 	var dir = Directory.new()
-	if not dir.dir_exists('user://screenshots/'):
-		dir.make_dir_recursive('user://screenshots/')
-	ResourceSaver.save('user://screenshots/save_01.tres', new_save)
+	if not dir.dir_exists('res://screenshots/'):
+		dir.make_dir_recursive('res://screenshots/')
+	ResourceSaver.save('res://screenshots/save_01.tres', new_save)
 
 func load_game():
 	var dir = Directory.new()
-	if not dir.file_exists('user://screenshots/save_01.tres'):
+	if not dir.file_exists('res://screenshots/save_01.tres'):
 		return false
-	var saved_game = load('user://screenshots/save_01.tres')
+	var saved_game = load('res://screenshots/save_01.tres')
 	if not verify_save(saved_game):
 		return false
 	SceneController.new_scene = saved_game.new_scene
