@@ -290,10 +290,6 @@ func blink(tile, touched_color, original_color):
 	yield(get_tree().create_timer(0.5),"timeout")
 	tile.get_node('win').emitting = false
 
-	
-
-
-
 
 
 func reset_all_variables(disable_button,collected_sound):
