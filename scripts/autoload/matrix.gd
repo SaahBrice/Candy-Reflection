@@ -334,6 +334,7 @@ func reset_all_variables1(disable_button,level,collected_sound):
 		for sounds in collected_sound:
 			sounds.play()
 			yield(get_tree().create_timer(0.3), "timeout")
+	Sounds.sound_variable_shuffler()
 	Input.vibrate_handheld(SceneController.winning_vibration)
 
 
