@@ -143,4 +143,5 @@ func _on_menu_pressed() -> void:
 	Sounds.sound_collection.piano_level_music.stop()
 	Sounds.sound_collection.very_relaxing_piano.stop()
 	Sounds.sound_collection.rain_thunder.stop()
+	Matrix.original_matrix = []
 	get_tree().change_scene("res://scenes/Message_scene.tscn")
